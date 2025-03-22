@@ -12,5 +12,7 @@ set service dns forwarding allow-from 10.0.17.0/24
 set service dns forwarding listen-address 10.0.17.2
 set service dns forwarding system
 set system name-server 10.0.17.2
-
+set nat source rule 20 outbound-interface eth0
+set nat source rule 20 source address 192.168.1.1/24
+set nat source rule 20 translation address 'masquerade'
 
