@@ -74,3 +74,22 @@ def generate_user_payments():
 
 def generate_employee_data():
 
+
+def main():
+    parser = argparse.ArgumentParser(description='generate data')
+    parser.add_argument('-h', default='localhost')
+    parser.add_argument('-u', default='root')
+    parser.add_argument('-p', default='')
+    parser.add_argument('-d', required=True)
+    parser.add_argument('--users', type=int, default=100)
+    parser.add_argument('--payments', type=int, default=100)
+    parser.add_argument('--employees', type=int, default=100)
+    parser.add_argument('--create-tables', action='store_true')
+    
+    args = parser.parse_args()
+
+    connection = connect_db(args.h, args.u, args.p, args.d)
+    if not connection:
+        return
+    
+    waiter = connection.cursor()
