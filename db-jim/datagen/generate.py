@@ -71,7 +71,7 @@ def create_tables(cursor):
     """)
 
 
-def generate_user_data():
+def generate_user_data(cursor, num_users):
     print(f"generating users")
 
     user_insert = """
@@ -92,11 +92,47 @@ def generate_user_data():
 
 
 
-def generate_user_payments():
+def generate_user_payments(cursor, num_users):
+    print(f"generating user_payments")
+
+    user_payments_insert = """
+    INSERT INTO user_payments (user_id, last_payment_date, next_payment_date, payment_amount, billing_address)
+    VALUES (%s, %s, %s, %s, %s)
+    """
+
+    user_payments = []
+    for _ in range(num_users):
+        # user_id = # get last id then +1 it or maybe mysql does it automatically i have to figure it out
+        last_payment_date = fake.date()
+        # last + 30 days or something next_payment_date =
+        payment_amount = "19.99"
+        # billing_address = set to user_id's home address?
+
+        user_payments.append((last_payment_date, payment_amount)) # i need to figure out mysql so i can finish this section 
+    
+    cursor.executemany(user_payments_insert, user_payments)
 
 
 
-def generate_employee_data():
+def generate_employee_data(cursor, num_users):
+    print(f"generating users")
+
+    user_insert = """
+    INSERT INTO user_data (user_id, first_name, last_name, address)
+    VALUES (%s, %s, %s, %s)
+    """
+
+    users = []
+    for _ in range(num_users):
+        # user_id = # get last id then +1 it or maybe mysql does it automatically i have to figure it out
+        first_name = fake.first_name()
+        last_name = fake.last_name()
+        address = fake.address() # figure out custom address later?
+
+        users.append((first_name, last_name, address)) 
+    
+    cursor.executemany(user_insert, users)
+
 
 
 def main():
