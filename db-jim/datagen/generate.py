@@ -19,8 +19,8 @@ def connect_db(host, user, pw, db):
         print("Erro connection to mysql: {err}")
         return None
 
-def create_tables(waiter):
-    waiter.execute("""
+def create_tables(cursor):
+    cursor.execute("""
     CREATE TABLE IF NOT EXISTS connection_data (
         id INT AUTO_INCREMENT PRIMARY KEY,
         timestamp DATETIME NOT NULL,
@@ -30,7 +30,7 @@ def create_tables(waiter):
     """)
     
     # User data table
-    waiter.execute("""
+    cursor.execute("""
     CREATE TABLE IF NOT EXISTS user_data (
         user_id INT AUTO_INCREMENT PRIMARY KEY,
         first_name VARCHAR(50) NOT NULL,
@@ -40,7 +40,7 @@ def create_tables(waiter):
     """)
     
     # User payments table
-    waiter.execute("""
+    cursor.execute("""
     CREATE TABLE IF NOT EXISTS user_payments (
         id INT AUTO_INCREMENT PRIMARY KEY,
         user_id INT NOT NULL,
@@ -53,7 +53,7 @@ def create_tables(waiter):
     """)
     
     # Employee data table
-    waiter.execute("""
+    cursor.execute("""
     CREATE TABLE IF NOT EXISTS employee_data (
         employee_id INT AUTO_INCREMENT PRIMARY KEY,
         first_name VARCHAR(50) NOT NULL,
@@ -64,7 +64,31 @@ def create_tables(waiter):
     )
     """)
 
+    # User web login table
+    cursor.execute("""V
+    CREATE TABLE IF NOT EXISTS employee_data (
+    )
+    """)
+
+
 def generate_user_data():
+    print(f"generating users")
+
+    user_insert = """
+    INSERT INTO user_data (user_id, first_name, last_name, address)
+    VALUES (%s, %s, %s, %s)
+    """
+
+    users = []
+    for _ in range(num_users):
+        # user_id = # get last id then +1 it or maybe mysql does it automatically i have to figure it out
+        first_name = fake.first_name()
+        last_name = fake.last_name()
+        address = fake.address() # figure out custom address later?
+
+        users.append((first_name, last_name, address)) 
+    
+    cursor.executemany(user_insert, users)
 
 
 
@@ -92,4 +116,6 @@ def main():
     if not connection:
         return
     
-    waiter = connection.cursor()
+    cursor = connection.cursor()
+
+    # need to write try functionality to create the tables after args get parsed 
