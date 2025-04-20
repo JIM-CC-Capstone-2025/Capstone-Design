@@ -22,7 +22,7 @@ We’d love for anyone in the cybersecurity community to interact with the site 
 
 We’d also appreciate any feedback on how we could make it a better educational experience (or juicier for attackers 👀).
 
-Thanks in advance — and stay safe out there!
+Thanks in advance - and stay safe out there!
 
-— Isaiah and the JIM Telecom Team
+- The JIM Telecom Team
 (Capstone Project @ Champlain College)
