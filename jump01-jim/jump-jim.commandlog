@@ -1,0 +1,6 @@
+sudo adduser jack
+sudo passwd jack
+sudo usermod -aG wheel jack
+sudo useradd isaiah
+sudo passwd isaiah
+sudo usermod -aG wheel isaiah
