@@ -1,0 +1,4 @@
+sudo adduser jack
+sudo adduser isaiah
+sudo usermod -aG sudo jack
+sudo usermod -aG sudo isaiah
