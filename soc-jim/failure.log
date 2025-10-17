@@ -1,0 +1,100 @@
+[2025-10-17T14:30:39,830][INFO ][o.e.p.PluginsService     ] [soc-jim] loaded module [lang-expression]
+[2025-10-17T14:30:39,830][INFO ][o.e.p.PluginsService     ] [soc-jim] loaded module [ingest-otel]
+[2025-10-17T14:30:39,830][INFO ][o.e.p.PluginsService     ] [soc-jim] loaded module [x-pack-eql]
+[2025-10-17T14:30:40,721][WARN ][stderr                   ] [soc-jim] SLF4J: No SLF4J providers were found.
+[2025-10-17T14:30:40,723][WARN ][stderr                   ] [soc-jim] SLF4J: Defaulting to no-operation (NOP) logger implementation
+[2025-10-17T14:30:40,724][WARN ][stderr                   ] [soc-jim] SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+[2025-10-17T14:30:42,938][INFO ][o.e.e.NodeEnvironment    ] [soc-jim] using [1] data paths, mounts [[/ (/dev/sda3)]], net usable_space [81.4gb], net total_space [97.8gb], types [ext4]
+[2025-10-17T14:30:42,938][INFO ][o.e.e.NodeEnvironment    ] [soc-jim] heap size [7.8gb], compressed ordinary object pointers [true]
+[2025-10-17T14:30:43,043][INFO ][o.e.n.Node               ] [soc-jim] node name [soc-jim], node ID [rBdw6SyiR8KeEiGJ9FN0Zw], cluster name [capstone-jim], roles [data_frozen, ingest, data_cold, data, remote_cluster_client, master, data_warm, data_content, transform, data_hot, ml]
+[2025-10-17T14:30:48,730][INFO ][o.e.f.FeatureService     ] [soc-jim] Registered local node features [cluster.stats.source_modes, data_stream.auto_sharding, data_stream.failure_store, data_stream.lifecycle.global_retention, data_stream.rollover.lazy, desired_node.version_deprecated, esql.agg_values, esql.async_query, esql.base64_decode_encode, esql.casting_operator, esql.counter_types, esql.disable_nullable_opts, esql.from_options, esql.metadata_fields, esql.metrics_counter_fields, esql.mv_ordering_sorted_ascending, esql.mv_sort, esql.resolve_fields_api, esql.spatial_points_from_source, esql.spatial_shapes, esql.st_centroid_agg, esql.st_contains_within, esql.st_disjoint, esql.st_intersects, esql.st_x_y, esql.string_literal_auto_casting, esql.string_literal_auto_casting_extended, esql.timespan_abbreviations, features_supported, file_settings, flattened.ignore_above_support, geoip.downloader.database.configuration, get_database_configuration_action.multi_node, health.dsl.info, health.extended_repository_indicator, knn_retriever_supported, license-trial-independent-version, linear_retriever_supported, logsdb_telemetry, logsdb_telemetry_stats, mapper.boolean_dimension, mapper.flattened.ignore_above_with_arrays_support, mapper.ignore_above_index_level_setting, mapper.index_sorting_on_nested, mapper.keyword_dimension_ignore_above, mapper.keyword_normalizer_synthetic_source, mapper.pass_through_priority, mapper.query_index_mode, mapper.range.null_values_off_by_one_fix, mapper.segment_level_fields_stats, mapper.source.synthetic_source_copy_to_fix, mapper.source.synthetic_source_copy_to_inside_objects_fix, mapper.source.synthetic_source_fallback, mapper.source.synthetic_source_stored_fields_advance_fix, mapper.source.synthetic_source_with_copy_to_and_doc_values_false, mapper.subobjects_auto, mapper.subobjects_auto_fixes, mapper.synthetic_source_keep, mapper.track_ignored_source, mapper.vectors.bbq, mapper.vectors.bit_vectors, mapper.vectors.int4_quantization, put_database_configuration_action.ipinfo, query_rule_list_types, query_rule_retriever_supported, query_rules.test, random_reranker_retriever_supported, repositories.supports_usage_stats, rest.capabilities_action, rest.local_only_capabilities, retrievers_supported, routing.boolean_routing_path, routing.multi_value_routing_path, rrf_retriever_composition_supported, rrf_retriever_supported, script.hamming, script.term_stats, search.vectors.k_param_supported, security.migration_framework, security.queryable_built_in_roles, security.role_mapping_cleanup, security.roles_metadata_flattened, semantic_text.default_elser_2, semantic_text.search_inference_id, simulate.component.template.substitutions, simulate.ignored.fields, simulate.index.template.substitutions, simulate.mapping.addition, simulate.mapping.validation, simulate.mapping.validation.templates, simulate.support.non.template.mapping, slm.interval_schedule, snapshot.repository_verify_integrity, standard_retriever_supported, stats.include_disk_thresholds, text_similarity_reranker_retriever_composition_supported, text_similarity_reranker_retriever_supported, tsdb.ts_routing_hash_doc_value_parse_byte_ref, unified_highlighter_matched_fields, usage.data_tiers.precalculate_stats]
+[2025-10-17T14:30:50,647][INFO ][o.e.i.r.RecoverySettings ] [soc-jim] using rate limit [40mb] with [default=40mb, read=0b, write=0b, max=0b]
+[2025-10-17T14:30:50,943][INFO ][o.e.c.m.DataStreamGlobalRetentionSettings] [soc-jim] Updated global default retention to [null]
+[2025-10-17T14:30:50,944][INFO ][o.e.c.m.DataStreamGlobalRetentionSettings] [soc-jim] Updated global max retention to [null]
+[2025-10-17T14:30:50,945][INFO ][o.e.c.m.DataStreamGlobalRetentionSettings] [soc-jim] Updated failures default retention to [30d]
+[2025-10-17T14:30:50,947][INFO ][o.e.c.m.DataStreamFailureStoreSettings] [soc-jim] Updated data stream name patterns for enabling failure store to [[]]
+[2025-10-17T14:30:51,897][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [soc-jim] [controller/5064] [Main.cc@123] controller (64 bit): Version 8.19.5 (Build 41e13efcbc40e9) Copyright (c) 2025 Elasticsearch BV
+[2025-10-17T14:30:52,550][INFO ][o.e.x.o.OTelPlugin       ] [soc-jim] OTel ingest plugin is enabled
+[2025-10-17T14:30:52,615][INFO ][o.e.x.c.t.YamlTemplateRegistry] [soc-jim] OpenTelemetry index template registry is enabled
+[2025-10-17T14:30:52,623][INFO ][o.e.t.a.APM              ] [soc-jim] Sending apm metrics is disabled
+[2025-10-17T14:30:52,624][INFO ][o.e.t.a.APM              ] [soc-jim] Sending apm tracing is disabled
+[2025-10-17T14:30:52,700][INFO ][o.e.x.s.Security         ] [soc-jim] Security is enabled
+[2025-10-17T14:30:53,571][INFO ][o.e.x.s.a.s.FileRolesStore] [soc-jim] parsed [0] roles from file [/etc/elasticsearch/roles.yml]
+[2025-10-17T14:30:53,932][INFO ][o.e.x.s.InitialNodeSecurityAutoConfiguration] [soc-jim] Auto-configuration will not generate a password for the elastic built-in superuser, as we cannot  determine if there is a terminal attached to the elasticsearch process. You can use the `bin/elasticsearch-reset-password` tool to set the password for the elastic user.
+[2025-10-17T14:30:54,579][INFO ][o.e.x.w.Watcher          ] [soc-jim] Watcher initialized components at 2025-10-17T18:30:54.578Z
+[2025-10-17T14:30:54,761][INFO ][o.e.x.p.ProfilingPlugin  ] [soc-jim] Profiling is enabled
+[2025-10-17T14:30:54,791][INFO ][o.e.x.p.ProfilingPlugin  ] [soc-jim] profiling index templates will not be installed or reinstalled
+[2025-10-17T14:30:54,816][INFO ][o.e.x.a.APMPlugin        ] [soc-jim] APM ingest plugin is enabled
+[2025-10-17T14:30:54,884][INFO ][o.e.x.c.t.YamlTemplateRegistry] [soc-jim] apm index template registry is enabled
+[2025-10-17T14:30:55,741][INFO ][o.e.t.n.NettyAllocator   ] [soc-jim] creating NettyAllocator with the following configs: [name=elasticsearch_configured, chunk_size=1mb, suggested_max_allocation_size=1mb, factors={es.unsafe.use_netty_default_chunk_and_page_size=false, g1gc_enabled=true, g1gc_region_size=4mb}]
+[2025-10-17T14:30:55,844][INFO ][o.e.d.DiscoveryModule    ] [soc-jim] using discovery type [multi-node] and seed hosts providers [settings]
+[2025-10-17T14:30:58,386][INFO ][o.e.n.Node               ] [soc-jim] initialized
+[2025-10-17T14:30:58,389][INFO ][o.e.n.Node               ] [soc-jim] starting ...
+[2025-10-17T14:31:04,692][INFO ][o.e.x.s.c.f.PersistentCache] [soc-jim] persistent cache index loaded
+[2025-10-17T14:31:04,697][INFO ][o.e.x.d.l.DeprecationIndexingComponent] [soc-jim] deprecation component started
+[2025-10-17T14:31:05,031][INFO ][o.e.t.TransportService   ] [soc-jim] publish_address {localhost/127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}
+[2025-10-17T14:31:05,575][WARN ][o.e.b.BootstrapChecks    ] [soc-jim] Transport SSL must be enabled if security is enabled. Please set [xpack.security.transport.ssl.enabled] to [true] or disable security by setting [xpack.security.enabled] to [false]; for more information see [https://www.elastic.co/guide/en/elasticsearch/reference/8.19/bootstrap-checks-xpack.html#bootstrap-checks-tls]
+[2025-10-17T14:31:05,580][INFO ][o.e.c.c.ClusterBootstrapService] [soc-jim] this node has not joined a bootstrapped cluster yet; [cluster.initial_master_nodes] is set to [xubuntu]
+[2025-10-17T14:31:05,603][INFO ][o.e.c.c.ClusterBootstrapService] [soc-jim] skipping cluster bootstrapping as local node does not match bootstrap requirements: [xubuntu]
+[2025-10-17T14:31:07,712][INFO ][o.e.n.j.JdkPosixCLibrary ] [soc-jim] Sending 28 bytes to socket
+[2025-10-17T14:31:15,612][WARN ][o.e.c.c.ClusterFormationFailureHelper] [soc-jim] master not discovered yet, this node has not previously joined a bootstrapped cluster, and this node must discover master-eligible nodes [xubuntu] to bootstrap a cluster: have discovered [{soc-jim}{rBdw6SyiR8KeEiGJ9FN0Zw}{9HarXAYNSomdQv-Ed4P24w}{soc-jim}{localhost}{127.0.0.1:9300}{cdfhilmrstw}{8.19.5}{7000099-8536000}]; discovery will continue using [127.0.0.1:9301, 127.0.0.1:9302, 127.0.0.1:9303, 127.0.0.1:9304, 127.0.0.1:9305, [::1]:9300, [::1]:9301, [::1]:9302, [::1]:9303, [::1]:9304, [::1]:9305] from hosts providers and [{soc-jim}{rBdw6SyiR8KeEiGJ9FN0Zw}{9HarXAYNSomdQv-Ed4P24w}{soc-jim}{localhost}{127.0.0.1:9300}{cdfhilmrstw}{8.19.5}{7000099-8536000}] from last-known cluster state; node term 0, last-accepted version 0 in term 0; for troubleshooting guidance, see https://www.elastic.co/guide/en/elasticsearch/reference/8.19/discovery-troubleshooting.html
+[2025-10-17T14:31:22,722][INFO ][o.e.n.j.JdkPosixCLibrary ] [soc-jim] Sending 28 bytes to socket
+[2025-10-17T14:31:25,616][WARN ][o.e.c.c.ClusterFormationFailureHelper] [soc-jim] master not discovered yet, this node has not previously joined a bootstrapped cluster, and this node must discover master-eligible nodes [xubuntu] to bootstrap a cluster: have discovered [{soc-jim}{rBdw6SyiR8KeEiGJ9FN0Zw}{9HarXAYNSomdQv-Ed4P24w}{soc-jim}{localhost}{127.0.0.1:9300}{cdfhilmrstw}{8.19.5}{7000099-8536000}]; discovery will continue using [127.0.0.1:9301, 127.0.0.1:9302, 127.0.0.1:9303, 127.0.0.1:9304, 127.0.0.1:9305, [::1]:9300, [::1]:9301, [::1]:9302, [::1]:9303, [::1]:9304, [::1]:9305] from hosts providers and [{soc-jim}{rBdw6SyiR8KeEiGJ9FN0Zw}{9HarXAYNSomdQv-Ed4P24w}{soc-jim}{localhost}{127.0.0.1:9300}{cdfhilmrstw}{8.19.5}{7000099-8536000}] from last-known cluster state; node term 0, last-accepted version 0 in term 0; for troubleshooting guidance, see https://www.elastic.co/guide/en/elasticsearch/reference/8.19/discovery-troubleshooting.html
+[2025-10-17T14:31:35,619][WARN ][o.e.c.c.ClusterFormationFailureHelper] [soc-jim] master not discovered yet, this node has not previously joined a bootstrapped cluster, and this node must discover master-eligible nodes [xubuntu] to bootstrap a cluster: have discovered [{soc-jim}{rBdw6SyiR8KeEiGJ9FN0Zw}{9HarXAYNSomdQv-Ed4P24w}{soc-jim}{localhost}{127.0.0.1:9300}{cdfhilmrstw}{8.19.5}{7000099-8536000}]; discovery will continue using [127.0.0.1:9301, 127.0.0.1:9302, 127.0.0.1:9303, 127.0.0.1:9304, 127.0.0.1:9305, [::1]:9300, [::1]:9301, [::1]:9302, [::1]:9303, [::1]:9304, [::1]:9305] from hosts providers and [{soc-jim}{rBdw6SyiR8KeEiGJ9FN0Zw}{9HarXAYNSomdQv-Ed4P24w}{soc-jim}{localhost}{127.0.0.1:9300}{cdfhilmrstw}{8.19.5}{7000099-8536000}] from last-known cluster state; node term 0, last-accepted version 0 in term 0; for troubleshooting guidance, see https://www.elastic.co/guide/en/elasticsearch/reference/8.19/discovery-troubleshooting.html
+[2025-10-17T14:31:35,625][WARN ][o.e.n.Node               ] [soc-jim] timed out after [discovery.initial_state_timeout=30s] while waiting for initial discovery state; for troubleshooting guidance see [https://www.elastic.co/guide/en/elasticsearch/reference/8.19/discovery-troubleshooting.html]
+[2025-10-17T14:31:35,664][ERROR][o.e.b.Elasticsearch      ] [soc-jim] fatal exception while booting Elasticsearch
+org.elasticsearch.http.BindHttpException: Failed to bind to 192.168.3.2:9200
+	at org.elasticsearch.http.AbstractHttpServerTransport.bindAddress(AbstractHttpServerTransport.java:228) ~[elasticsearch-8.19.5.jar:?]
+	at org.elasticsearch.http.AbstractHttpServerTransport.bindServer(AbstractHttpServerTransport.java:195) ~[elasticsearch-8.19.5.jar:?]
+	at org.elasticsearch.http.netty4.Netty4HttpServerTransport.doStart(Netty4HttpServerTransport.java:232) ~[?:?]
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:51) ~[elasticsearch-8.19.5.jar:?]
+	at org.elasticsearch.node.Node.start(Node.java:427) ~[elasticsearch-8.19.5.jar:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.start(Elasticsearch.java:617) ~[elasticsearch-8.19.5.jar:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.initPhase3(Elasticsearch.java:417) ~[elasticsearch-8.19.5.jar:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:99) ~[elasticsearch-8.19.5.jar:?]
+Caused by: java.net.BindException: Cannot assign requested address
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:522) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:335) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:297) ~[?:?]
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:141) ~[?:?]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:561) ~[?:?]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1281) ~[?:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:600) ~[?:?]
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:579) ~[?:?]
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:922) ~[?:?]
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:259) ~[?:?]
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:380) ~[?:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[?:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[?:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472) ~[?:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[?:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998) ~[?:?]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1474) ~[?:?]
+	Suppressed: java.lang.RuntimeException: Rethrowing promise failure cause
+		at io.netty.util.concurrent.DefaultPromise.rethrowIfFailed(DefaultPromise.java:685) ~[?:?]
+		at io.netty.util.concurrent.DefaultPromise.sync(DefaultPromise.java:419) ~[?:?]
+		at io.netty.channel.DefaultChannelPromise.sync(DefaultChannelPromise.java:119) ~[?:?]
+		at io.netty.channel.DefaultChannelPromise.sync(DefaultChannelPromise.java:30) ~[?:?]
+		at org.elasticsearch.http.netty4.Netty4HttpServerTransport.bind(Netty4HttpServerTransport.java:246) ~[?:?]
+		at org.elasticsearch.http.AbstractHttpServerTransport.lambda$bindAddress$2(AbstractHttpServerTransport.java:217) ~[elasticsearch-8.19.5.jar:?]
+		at org.elasticsearch.common.transport.PortsRange.iterate(PortsRange.java:45) ~[elasticsearch-8.19.5.jar:?]
+		at org.elasticsearch.http.AbstractHttpServerTransport.bindAddress(AbstractHttpServerTransport.java:214) ~[elasticsearch-8.19.5.jar:?]
+		at org.elasticsearch.http.AbstractHttpServerTransport.bindServer(AbstractHttpServerTransport.java:195) ~[elasticsearch-8.19.5.jar:?]
+		at org.elasticsearch.http.netty4.Netty4HttpServerTransport.doStart(Netty4HttpServerTransport.java:232) ~[?:?]
+		at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:51) ~[elasticsearch-8.19.5.jar:?]
+		at org.elasticsearch.node.Node.start(Node.java:427) ~[elasticsearch-8.19.5.jar:?]
+		at org.elasticsearch.bootstrap.Elasticsearch.start(Elasticsearch.java:617) ~[elasticsearch-8.19.5.jar:?]
+		at org.elasticsearch.bootstrap.Elasticsearch.initPhase3(Elasticsearch.java:417) ~[elasticsearch-8.19.5.jar:?]
+		at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:99) ~[elasticsearch-8.19.5.jar:?]
+[2025-10-17T14:31:35,715][INFO ][o.e.n.Node               ] [soc-jim] stopping ...
+[2025-10-17T14:31:35,726][INFO ][o.e.x.w.WatcherService   ] [soc-jim] stopping watch service, reason [shutdown initiated]
+[2025-10-17T14:31:35,726][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [soc-jim] [controller/5064] [Main.cc@176] ML controller exiting
+[2025-10-17T14:31:35,727][INFO ][o.e.x.m.p.NativeController] [soc-jim] Native controller process has stopped - no new native processes can be started
+[2025-10-17T14:31:35,728][INFO ][o.e.x.w.WatcherLifeCycleService] [soc-jim] watcher has stopped and shutdown
+[2025-10-17T14:31:35,730][INFO ][o.e.x.w.t.s.e.TickerScheduleTriggerEngine] [soc-jim] Stopping watcher engine
+[2025-10-17T14:31:36,172][INFO ][o.e.n.Node               ] [soc-jim] stopped
+[2025-10-17T14:31:36,173][INFO ][o.e.n.Node               ] [soc-jim] closing ...
+[2025-10-17T14:31:36,210][INFO ][o.e.n.j.JdkPosixCLibrary ] [soc-jim] Sending 10 bytes to socket
+[2025-10-17T14:31:36,230][INFO ][o.e.n.Node               ] [soc-jim] closed
